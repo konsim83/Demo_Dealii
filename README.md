@@ -17,20 +17,18 @@ example program of the Deal.ii library.
 
 ---
 **HINT**
+The Deal.ii library v9.1.1 is available in the package repositories of
+Ubuntu 20.04. This way you do not need to compile it yourself.	
+In case you need to compile it follow the instructions linked
+[here](https://www.dealii.org/current/index.html). You do not need to
+install all dependencies -- a minimum is sufficient here.	
+The manual of the library is available
+[here](https://www.dealii.org/9.1.1/doxygen/deal.II/index.html). A
+good number of video tutorials can be found
+[here](https://www.math.colostate.edu/~bangerth/videos.html). They are
+for an earlier release so the syntax might vary a bit but the
+principles stayed essentially the same.
 
-	The Deal.ii library v9.1.1 is available in the package repositories of
-	Ubuntu 20.04. This way you do not need to compile it yourself.
-	
-	In case you need to compile it follow the instructions linked
-	[here](https://www.dealii.org/current/index.html). You do not need to
-	install all dependencies -- a minimum is sufficient here.
-	
-	The manual of the library is available
-	[here](https://www.dealii.org/9.1.1/doxygen/deal.II/index.html). A
-	good number of video tutorials can be found
-	[here](https://www.math.colostate.edu/~bangerth/videos.html). They are
-	for an earlier release so the syntax might vary a bit but the
-	principles stayed essentially the same.
 ---
 
 *Optional:*
