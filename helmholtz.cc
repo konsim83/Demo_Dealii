@@ -73,6 +73,18 @@ namespace Helmholtz
 
 
   template <>
+  Tensor<1, 1> Solution<1>::gradient(const Point<1> &p,
+                                         const unsigned int) const
+  {
+    Tensor<1, 1> return_value;
+
+	return_value[0] = - 2 * numbers::PI * sin(2*numbers::PI*p(0));
+
+    return return_value;
+  }
+
+
+  template <>
   Tensor<1, 2> Solution<2>::gradient(const Point<2> &p,
                                          const unsigned int) const
   {
@@ -365,7 +377,7 @@ namespace Helmholtz
   void HelmholtzSolver<dim>::run()
   {
 
-    const unsigned int n_cycles = 5;
+    const unsigned int n_cycles = 6;
 
     for (unsigned int cycle = 0; cycle < n_cycles; ++cycle)
       {
@@ -479,7 +491,7 @@ namespace Helmholtz
 
 int main()
 {
-  const unsigned int dim = 3;
+  const unsigned int dim = 1;
 
   try
     {
